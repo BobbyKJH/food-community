@@ -1,0 +1,17 @@
+.Nav {
+  position: relative;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.name {
+  font-size: 36px;
+  padding: 15px;
+  text-align: center;
+}
+.subNav {
+  position: fixed;
+  top: 100px;
+  border: 1px solid black;
+  right: 0;
+  left: 0;
+}
