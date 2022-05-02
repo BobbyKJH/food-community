@@ -1,17 +1,63 @@
+hr {
+  color: black;
+  margin: 0;
+}
+
+/* 전체 박스 */
 .Nav {
+  background-color: aqua;
   position: relative;
   border: 1px solid black;
   box-sizing: border-box;
 }
+
 .name {
+  background-color: antiquewhite;
   font-size: 36px;
   padding: 15px;
   text-align: center;
+  text-decoration: none;
 }
-.subNav {
-  position: fixed;
-  top: 100px;
+.find {
+  display: flex;
+  margin: 0 auto;
+  width: 1100px;
   border: 1px solid black;
-  right: 0;
-  left: 0;
+}
+
+/* fix 타이틀 */
+.subNav {
+  background-color: beige;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 auto;
+  /* padding: 10px; */
+  width: 80%;
+}
+/* 제목  */
+.titleLink {
+  display: block;
+  text-decoration: none;
+  font-size: 60px;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+}
+/* 4가지  */
+.contentLink {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  width: 25%;
+}
+/* 로그인 회원가입 */
+.findLink {
+  text-decoration: none;
+  padding: 10px 0;
+  width: 50%;
+  text-align: center;
+}
+.findLink:hover {
+  text-decoration: underline;
 }

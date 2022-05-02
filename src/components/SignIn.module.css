@@ -1,0 +1,54 @@
+/* 전체 박스 */
+.box {
+  text-align: center;
+  border: 3px solid black;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.5);
+  width: 500px;
+  height: 600px;
+}
+/* 로그인 */
+.title {
+  margin: 40px 0;
+}
+.input {
+  margin-top: 50px;
+}
+/* 아이디 비밀번호 박스 */
+.emptyBox {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+/* 로그인 버튼 */
+.btn {
+  cursor: pointer;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+.btn:hover {
+  text-decoration: underline;
+}
+/* 회원가입 버튼 */
+.membership {
+  display: block;
+  text-decoration: none;
+  margin: 20px 0;
+}
+.findMembership {
+  display: flex;
+}
+/* 아이디 비밀번호 찾기 */
+.find {
+  text-decoration: none;
+  margin: 0 10px;
+  width: 50%;
+}
