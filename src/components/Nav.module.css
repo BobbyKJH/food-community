@@ -1,63 +1,55 @@
-hr {
-  color: black;
-  margin: 0;
-}
-
 /* 전체 박스 */
-.Nav {
-  background-color: aqua;
-  position: relative;
-  border: 1px solid black;
-  box-sizing: border-box;
+.body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #000;
 }
-
-.name {
-  background-color: antiquewhite;
-  font-size: 36px;
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-}
-.find {
+/* nav 박스 */
+.nav {
   display: flex;
-  margin: 0 auto;
-  width: 1100px;
-  border: 1px solid black;
-}
-
-/* fix 타이틀 */
-.subNav {
-  background-color: beige;
-  display: flex;
-  text-align: center;
-  border: 1px solid black;
-  margin: 0 auto;
-  /* padding: 10px; */
+  justify-content: center;
+  align-items: center;
   width: 80%;
+  height: 90px;
+  margin: 0 auto;
 }
-/* 제목  */
+.titleNav {
+  width: 30%;
+  text-align: center;
+}
+.subNav {
+  display: flex;
+  width: 60%;
+  text-align: center;
+}
+.findNav {
+  width: 10%;
+  text-align: center;
+}
+/* Logo */
 .titleLink {
-  display: block;
+  font-size: 150%;
   text-decoration: none;
-  font-size: 60px;
-  margin: 20px 0;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
-/* 4가지  */
+/* nav 내용 */
 .contentLink {
-  text-decoration: none;
-  color: black;
   font-size: 16px;
-  padding: 10px;
+  text-decoration: none;
+  color: #000;
   width: 25%;
+}
+.contentLink:hover {
+  text-decoration: underline;
 }
 /* 로그인 회원가입 */
 .findLink {
+  font-size: 8px;
   text-decoration: none;
-  padding: 10px 0;
-  width: 50%;
-  text-align: center;
+  color: #000;
 }
-.findLink:hover {
-  text-decoration: underline;
+.line {
+  height: 100%;
 }
