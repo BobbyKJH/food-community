@@ -39,7 +39,7 @@ export default function Nav() {
 
         {/* 로그인 */}
         <div className={styles.findNav}>
-          <Link to="/" className={styles.findLink}>
+          <Link to="/signin" className={styles.findLink}>
             로그인
           </Link>
           <hr />

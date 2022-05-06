@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   border-bottom: 1px solid #000;
+  background-color: #fff;
 }
 /* nav 박스 */
 .nav {
@@ -49,6 +50,9 @@
   font-size: 8px;
   text-decoration: none;
   color: #000;
+}
+.findLink:hover {
+  text-decoration: underline;
 }
 .line {
   height: 100%;
