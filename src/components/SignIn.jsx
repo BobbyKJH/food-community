@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import styles from "./SignIn.module.css";
 
 export default function SignIn() {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const focusId = useRef();
+  const focusPassword = useRef();
 
   // input ID
   const ID = (e) => {
@@ -18,7 +20,12 @@ export default function SignIn() {
 
   const onSubmitChange = (e) => {
     e.preventDefault();
+    focusPassword.current.focus();
   };
+
+  // useEffect(() => {
+  //   focusId.current.focus();
+  // });
   return (
     <form className={styles.box} onSubmit={onSubmitChange}>
       <h1 className={styles.title}>로그인</h1>
@@ -36,11 +43,11 @@ export default function SignIn() {
         />
         <input
           type="password"
+          ref={focusPassword}
           className={styles.emptyBox}
           value={password}
           onChange={PW}
           placeholder="비밀번호를 입력해주세요."
-          required
         />
       </div>
 
