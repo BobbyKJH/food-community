@@ -43,7 +43,7 @@ export default function Nav() {
             로그인
           </Link>
           <hr />
-          <Link to="/" className={styles.findLink}>
+          <Link to="/joinMembership" className={styles.findLink}>
             회원가입
           </Link>
         </div>
